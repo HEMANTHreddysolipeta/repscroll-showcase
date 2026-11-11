@@ -20,12 +20,15 @@ weekly winners and streaks that bring members back.
 
 ## See it work
 
-<p align="center"><img src="docs/pushup-replay.gif" alt="Replay of a real recorded session through the counter" width="480"></p>
+Two **real recorded sessions** (pose landmarks from a phone camera) replayed through the counters:
 
-A **real recorded session** (pose landmarks from a phone camera) replayed through the counter: 2 full
-pushups, 4 knee pushups and 1 more full one. Halfway through, the person sits back on their heels instead of
-pushing up, and **that earns nothing**. The counter lands every rep within 0.5 s of when it really
-happened (asserted in [`PushupReplayTest`](src/test/kotlin/com/repscroll/app/pushup/PushupReplayTest.kt)).
+| Side view | Front view |
+|---|---|
+| <img src="docs/pushup-replay.gif" alt="Side-view replay of a real session" width="400"> | <img src="docs/pushup-front.gif" alt="Front-view replay of a real session" width="400"> |
+| 2 full, 4 knee and 1 more full pushup. Halfway through, the person sits back on their heels instead of pushing up, and **that earns nothing**. Every rep lands within 0.5 s of when it really happened. | Phone on the floor facing the person: 10 full pushups and **one too shallow, which gets half credit**. The text is the app's real on-screen coaching at each moment. |
+
+Both are asserted in [`PushupReplayTest`](src/test/kotlin/com/repscroll/app/pushup/PushupReplayTest.kt).
+The front-view GIF is drawn from the counter's own frame-by-frame output.
 
 | Setup | Choose what waits | Earn time | Celebrate | Home |
 |---|---|---|---|---|
